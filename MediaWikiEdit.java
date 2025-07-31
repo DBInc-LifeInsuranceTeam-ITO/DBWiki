@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class MediaWikiEdit {
 
     // ✅ 변수 (수시로 변경 가능)
-    private static final String API_URL = "http://localhost/wiki/api.php";
+    private static final String API_URL = "http://10.90.40.231/wiki/api.php";
     private static final String USERNAME = "192133";
     private static final String PASSWORD = "Mi59659398@";
     private static final String PAGE_TITLE = "ndbliap1";
