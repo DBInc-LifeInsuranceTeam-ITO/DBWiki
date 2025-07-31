@@ -21,7 +21,7 @@
 
 1. **Java 11 이상** 설치
 2. MediaWiki 서버(API) 접근 가능 상태  
-   - 예: `http://localhost/wiki/api.php`
+   - 예: `http://10.90.40.231/wiki/api.php`
 3. 필요한 라이브러리(`.jar`) 파일을 `./lib` 폴더 또는 동일 경로에 배치
 
 ---
