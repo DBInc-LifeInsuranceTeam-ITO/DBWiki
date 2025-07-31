@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Volvox"
+		]
+	},
+	"skinname-liberty": "Fräiheet",
+	"liberty-desc": "Reaktiv Benotzeruewerfläch fir [https://librewiki.net/ LibreWiki]",
+	"liberty-dark-default": "Net ignoréieren",
+	"liberty-dark-dark": "Ignoréieren an den däischtere Modus aktivéieren",
+	"liberty-dark-light": "Ignoréieren an den helle Modus aktivéieren",
+	"liberty-feed-new": "[Nei]",
+	"liberty-font-name-default": "Standard",
+	"liberty-forgot-pw": "Hutt Dir Äert Passwuert vergiess?",
+	"liberty-layout-select-1200": "1200px (Standard)",
+	"liberty-login": "Aloggen",
+	"liberty-login-btn": "Aloggen",
+	"liberty-info": "Informatioun",
+	"liberty-purge": "Botzen",
+	"liberty-recent-discussions": "Rezent Diskussiounen",
+	"liberty-remember": "Mäi Login verhalen",
+	"liberty-share": "Deelen",
+	"liberty-view-more": "Méi weisen",
+	"prefs-color": "Faarwastellung",
+	"prefs-ads": "Astellunge fir d'Pub",
+	"liberty-pref-layout-width": "Statesch Breet",
+	"liberty-pref-color-main": "Haaptfaarf",
+	"liberty-pref-color-main-help": "Haaptfaarf, déi op dëser Säit benotzt gëtt.",
+	"liberty-pref-color-second": "Niewefaarf",
+	"liberty-pref-color-second-help": "Niewefaarf, déi op dëser Säit benotzt gëtt.",
+	"liberty-pref-fonts-helplabel": "Hëllef"
+}
