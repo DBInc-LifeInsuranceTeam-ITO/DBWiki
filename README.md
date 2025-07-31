@@ -1,35 +1,32 @@
-# MediaWiki
+# 📌 MediaWiki 문서 자동 업로드 스크립트
 
-MediaWiki is a free and open-source wiki software package written in PHP. It
-serves as the platform for Wikipedia and the other Wikimedia projects, used
-by hundreds of millions of people each month. MediaWiki is localised in over
-350 languages and its reliability and robust feature set have earned it a large
-and vibrant community of third-party users and developers.
+**MediaWiki API**를 활용하여 특정 문서에 자동으로 내용을 추가하는 Java 스크립트 예제입니다.  
+로그인 → CSRF 토큰 발급 → 문서 편집까지 자동화할 수 있습니다.
 
-MediaWiki is:
+---
 
-* feature-rich and extensible, both on-wiki and with hundreds of extensions;
-* scalable and suitable for both small and large sites;
-* simple to install, working on most hardware/software combinations; and
-* available in your language.
+## 📂 파일 구성
 
-For system requirements, installation, and upgrade details, see the files
-RELEASE-NOTES, INSTALL, and UPGRADE.
+| 파일명 | 설명 |
+|--------|------|
+| `MediaWikiEdit.java` | MediaWiki API를 이용한 자동 업로드 Java 코드 |
+| `MediaWikiEdit.class` | 컴파일된 클래스 파일 |
+| `jackson-annotations-2.17.2.jar` | Jackson 라이브러리 (JSON 처리) |
+| `jackson-core-2.17.2.jar` | Jackson 라이브러리 (코어 모듈) |
+| `jackson-databind-2.17.2.jar` | Jackson 라이브러리 (ObjectMapper 포함) |
 
-* Ready to get started?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/Download
-* Setting up your local development environment?
-  * https://www.mediawiki.org/wiki/Local_development_quickstart
-* Looking for the technical manual?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Contents
-* Seeking help from a person?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/Communication
-* Looking to file a bug report or a feature request?
-  * https://bugs.mediawiki.org/
-* Interested in helping out?
-  * https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute
+---
 
-MediaWiki is the result of global collaboration and cooperation. The CREDITS
-file lists technical contributors to the project. The COPYING file explains
-MediaWiki's copyright and license (GNU General Public License, version 2 or
-later). Many thanks to the Wikimedia community for testing and suggestions.
+## ⚙️ 사전 준비
+
+1. **Java 11 이상** 설치
+2. MediaWiki 서버(API) 접근 가능 상태  
+   - 예: `http://localhost/wiki/api.php`
+3. 필요한 라이브러리(`.jar`) 파일을 `./lib` 폴더 또는 동일 경로에 배치
+
+---
+
+## 🛠️ 컴파일
+
+```bash
+javac -encoding UTF-8 -cp ".;jackson-annotations-2.17.2.jar;jackson-core-2.17.2.jar;jackson-databind-2.17.2.jar" MediaWikiEdit.java
