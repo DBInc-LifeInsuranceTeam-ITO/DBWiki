@@ -26,7 +26,15 @@
 
 ---
 
-## 🛠️ 컴파일
+## 🛠️ 사용 방법
+
+### 1️⃣ 소스 코드 컴파일
 
 ```bash
 javac -encoding UTF-8 -cp ".;jackson-annotations-2.17.2.jar;jackson-core-2.17.2.jar;jackson-databind-2.17.2.jar" MediaWikiEdit.java
+```
+
+### 2️⃣ 프로그램 실행
+```bash
+java -cp ".;jackson-annotations-2.17.2.jar;jackson-core-2.17.2.jar;jackson-databind-2.17.2.jar" MediaWikiEdit
+```
