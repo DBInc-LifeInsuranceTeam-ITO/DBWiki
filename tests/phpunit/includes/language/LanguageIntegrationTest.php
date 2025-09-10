@@ -2126,7 +2126,7 @@ class LanguageIntegrationTest extends LanguageClassesTestCase {
 
 		$this->assertSame( '', $lang->listToText( [] ) );
 		$this->assertEquals( 'a', $lang->listToText( [ 'a' ] ) );
-		$this->assertEquals( "a{$and}{$s}b", $lang->listToText( [ 'a', 'b' ] ) );
+		$this->assertEquals( "a{$and}{$s}", $lang->listToText( [ 'a', 'b' ] ) );
 		$this->assertEquals( "a{$c}b{$and}{$s}c", $lang->listToText( [ 'a', 'b', 'c' ] ) );
 		$this->assertEquals( "a{$c}b{$c}c{$and}{$s}d", $lang->listToText( [ 'a', 'b', 'c', 'd' ] ) );
 	}

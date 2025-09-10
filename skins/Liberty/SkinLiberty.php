@@ -272,11 +272,14 @@ class SkinLiberty extends SkinTemplate {
 		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; }";
 
 		$LibertyUserDarkSetting = $userOptionsLookup->getOption( $user, 'liberty-dark' );
-		if ( $LibertyUserDarkSetting === 'dark' ) {
-			$out->addInlineStyle( $LibertyDarkCss );
-		} elseif ( $LibertyUserDarkSetting === null ) {
-			$out->addInlineStyle( "@media (prefers-color-scheme: dark) { $LibertyDarkCss }" );
-		}
+		// 무조건 Light 강제
+/*
+if ( $LibertyUserDarkSetting === 'dark' ) {
+    $out->addInlineStyle( $LibertyDarkCss );
+} elseif ( $LibertyUserDarkSetting === null ) {
+    $out->addInlineStyle( "@media (prefers-color-scheme: dark) { $LibertyDarkCss }" );
+}
+*/
 
 		// @codingStandardsIgnoreEnd
 		$this->setupCss( $out );
@@ -291,25 +294,25 @@ class SkinLiberty extends SkinTemplate {
 		$out->addHeadItem(
 			'font-awesome',
 			// @codingStandardsIgnoreLine
-			'<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.13.1/css/all.css" />'
+			'<link rel="stylesheet" href="/wiki/skins/Liberty/resources/lib/all.css" />'
 		);
 
 		$out->addHeadItem(
 			'font-awesome-shims',
 			// @codingStandardsIgnoreLine
-			'<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.13.1/css/v4-shims.css" />'
+			'<link rel="stylesheet" href="/wiki/skins/Liberty/resources/lib/v4-shims.css" />'
 		);
 
 		$out->addHeadItem(
 			'webfonts',
 			// @codingStandardsIgnoreLine
-			'<link href="https://fonts.googleapis.com/css?family=Dokdo|Gaegu|Nanum+Gothic|Nanum+Gothic+Coding|Nanum+Myeongjo|Noto+Serif+KR|Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">'
+			'<link href="/wiki/skins/Liberty/css/webfont.css" rel="stylesheet">'
 		);
 
 		$out->addHeadItem(
 			'share-api-polyfill',
 			// @codingStandardsIgnoreLine
-			'<script async src="https://unpkg.com/share-api-polyfill/dist/share-min.js"></script>'
+			'<script async src="/wiki/skins/Liberty/resources/lib/share-min.js"></script>'
 		);
 		$out->addModuleStyles( [ 'skins.liberty.styles' ] );
 	}

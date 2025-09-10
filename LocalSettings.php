@@ -133,10 +133,7 @@ $wgDefaultSkin = "Liberty";
 
 # Enabled skins.
 # The following skins were automatically enabled:
-wfLoadSkin( 'MinervaNeue' );
-wfLoadSkin( 'MonoBook' );
-wfLoadSkin( 'Timeless' );
-wfLoadSkin( 'Vector' );
+
 wfLoadSkin( 'Liberty' );
 
 
@@ -177,7 +174,10 @@ wfLoadExtension( 'Thanks' );
 wfLoadExtension( 'TitleBlacklist' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'WikiEditor' );
-
+$wgHooks['UserSaveOptions'][] = function( $user, &$options ) {
+    $options['liberty-theme'] = 'light';
+    return true;
+};
 // wfLoadExtension( 'PluggableAuth' );
 // wfLoadExtension( 'LDAPProvider' );
 // wfLoadExtension( 'LDAPAuthentication2' );

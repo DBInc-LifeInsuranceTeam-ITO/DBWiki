@@ -20,7 +20,7 @@ body {
 	font-size: 0.95rem;
 }
 
-body,
+/* body,
 h1,
 h2,
 h3,
@@ -43,6 +43,36 @@ b {
 	font-family: "Apple SD Gothic Neo", "Spoqa Han Sans", "SpoqaHanSans",
 		"Noto Sans KR", "Noto Sans", "Noto Sans CJK KR", "NanumBarunGothic",
 		"Nanum Gothic", "KoPub Dotum", "Malgun Gothic", "맑은 고딕", sans-serif;
+} */
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Pretendard', 'Noto Color Emoji', sans-serif;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+	font-family: "Pretendard", "Noto Color Emoji", sans-serif !important;
+}
+
+code, pre, tt {
+    font-family: "D2Coding", "Consolas", "Courier New", monospace;
+    font-size: 90%;
+    
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 
 input[type="password"] {
@@ -180,7 +210,7 @@ strike {
 /* Content width, alian center */
 .Liberty .nav-wrapper .navbar,
 .Liberty .content-wrapper {
-	max-width: 1200px;
+	max-width: 1600px;
 	margin: 0 auto;
 }
 /* Content width, alian center End */
