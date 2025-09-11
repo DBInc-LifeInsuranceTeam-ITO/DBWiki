@@ -61,6 +61,11 @@ __TOC__
 
 
 == 📝 변경이력 ==
+<!-- [CHANGE_LOG_SECTION_START] -->
+<!-- [CHANGE_LOG_SECTION_END] -->
 
+<br/>
 
 == 🚧 운영 이슈 ==
+<!-- [ISSUE_LOG_SECTION_START] -->
+<!-- [ISSUE_LOG_SECTION_END] -->
