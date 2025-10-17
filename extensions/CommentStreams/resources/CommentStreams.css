@@ -1,0 +1,363 @@
+/* comment-streams 전체 컨테이너 정리 */
+.cs-comments {
+	width: 100%;
+	margin-top: 8px;
+	padding: 8px 10px;
+	box-sizing: border-box;
+}
+
+/* 💬 코멘트 헤더 (버튼) */
+.cs-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 6px;
+	padding: 4px 0 6px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+.cs-header .oo-ui-buttonElement-framed .oo-ui-buttonElement-button {
+	background: #2e75b6;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 6px 14px;
+	font-weight: 500;
+	font-size: 13px;
+	transition: background 0.2s;
+}
+.cs-header .oo-ui-buttonElement-framed .oo-ui-buttonElement-button:hover {
+	background: #245a8e;
+	color: white;
+	border: none;
+}
+
+/* 스트림 전체 */
+.cs-stream {
+	margin-top: 8px;
+	border-radius: 12px;
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 10px;
+}
+
+/* 댓글 한 개 */
+.cs-comment {
+	padding: 0 6px;
+}
+.cs-comment:last-child {
+	border-bottom: none;
+}
+
+/* 헤더 (작성자/시간/메뉴) */
+.cs-comment-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 4px;
+}
+.cs-avatar {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+.cs-author-info {
+	display: flex;
+	flex-direction: column;
+}
+.cs-comment-author {
+	font-weight: 600;
+	color: #333;
+	font-size: 13px;
+}
+.cs-comment-details {
+	font-size: 12px;
+	color: #999;
+}
+.cs-comment-edited {
+	margin-left: 4px;
+	color: #666;
+	font-style: italic;
+}
+
+/* 본문 */
+.cs-comment-body {
+	font-size: 13px;
+	color: #333;
+	line-height: 1.5;
+	padding-left: 34px; /* 아바타 공간만큼 들여쓰기 */
+}
+
+/* 답변 버튼 */
+.cs-stream-footer {
+	text-align: right;
+	margin-top: 6px;
+	padding: 5px 12px 0 12px;
+	border-top: 1px solid #eee;
+}
+.cs-stream-footer .oo-ui-buttonElement-frameless .oo-ui-buttonElement-button {
+	color: #2e75b6;
+	font-size: 13px;
+	border-radius: 6px;
+	padding: 6px 9px;
+}
+.cs-stream-footer .oo-ui-buttonElement-frameless .oo-ui-buttonElement-button:hover {
+	background: rgba(46,117,182,0.08);
+}
+
+/* ✅ 대댓글 (Reply Comment) */
+.cs-reply-comment {
+	margin: 10px;
+	margin-left: 40px;
+	background: #f9fbfe; /* 💙 살짝 푸른톤 회색 */
+	border: 1px solid #e6edf5;
+	border-left: 6px solid #cfe3fa; /* 기존 블루라인 유지 */
+	border-radius: 8px;
+	padding: 8px 10px 6px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cs-reply-comment:hover {
+	background: #f3f7fc; /* hover 시 살짝 밝게 */
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+
+/* 📌 헤더 공통 */
+/* 헤더 (작성자/시간/메뉴) */
+.cs-comment-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 4px;
+	padding: 0 10px;
+}
+.cs-comment-header-left {
+	display: flex;
+	align-items: center; /* 아바타와 텍스트 수직 가운데 정렬 */
+	gap: 8px;            /* 간격 균일하게 */
+}
+
+/* 아바타 */
+.cs-avatar {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+/* 작성자/시간 */
+.cs-author-info {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.2;
+}
+
+.cs-comment-author {
+	font-weight: 600;
+	color: #222;
+	font-size: 13px;
+}
+
+.cs-comment-details {
+	font-size: 12px;
+	color: #999;
+	margin-top: 2px;
+}
+.cs-comment-edited {
+	margin-left: 4px;
+	color: #888888;
+	font-style: italic;
+}
+
+/* 공통 스타일 */
+.cs-comment-menu {
+	font-size: 18px;
+	color: #999;
+	cursor: pointer;
+	padding: 0;
+	border-radius: 6px;
+}
+
+/* 상위 span에 hover가 들어와도 아무 일도 안 하게 */
+.cs-comment-menu.oo-ui-buttonMenuSelectWidget:hover {
+	background: transparent !important;
+	color: inherit !important;
+}
+
+/* 실제 버튼 */
+.cs-comment-menu .oo-ui-buttonElement-button {
+	display: inline-block;
+	cursor: pointer;
+	padding: 3px 6px;
+	border-radius: 6px;
+	font-size: 18px;
+	color: #999;
+	user-select: none;
+	transition: color 0.2s, background 0.2s;
+}
+
+/* 내부 OOUI 아이콘 숨김 */
+.cs-comment-menu .oo-ui-iconElement-icon,
+.cs-comment-menu .oo-ui-indicatorElement-indicator,
+.cs-comment-menu .oo-ui-labelElement-invisible {
+	display: none !important;
+}
+
+/* hover는 내부 a 요소에만 적용 */
+.cs-comment-menu .oo-ui-buttonElement-button:hover {
+	color: #333;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+/* 본문 */
+.cs-comment-body {
+	padding: 7px 10px;
+	color: #333;
+	line-height: 1.55;
+	word-break: break-word;
+}
+
+.cs-comment-body p{
+	margin: 0;
+}
+
+
+.cs-stream-footer .oo-ui-buttonElement-framed.oo-ui-labelElement > .oo-ui-buttonElement-button {
+	background: #FFFFFF;
+	border-color: #f1f1f1;
+	border-radius: 8px;
+}
+/* 드롭다운 메뉴 */
+.cs-menu-dropdown {
+	position: absolute;
+	list-style: none;
+	background: #fff;
+	border: 1px solid #e0e5eb;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	padding: 6px 0;
+	width: 180px;
+	z-index: 1000;
+}
+.cs-menu-dropdown li {
+	padding: 8px 14px;
+	font-size: 0.9rem;
+	color: #333;
+	cursor: pointer;
+	transition: background 0.15s ease;
+}
+.cs-menu-dropdown li:hover {
+	background: #f0f6ff;
+}
+
+
+/* 전체 박스 */
+/* 댓글 입력 박스 전체 */
+.cs-edit-box {
+	background: #fafbfc;                     /* 은은한 회색 배경 */
+	border: none;               /* 얇은 테두리 */
+	/* border-radius: 10px;
+	padding: 12px 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+	transition: box-shadow 0.2s ease; */
+}
+
+/* textarea */
+.cs-body-edit-field {
+	width: 100%;
+	border: 1px solid #d8dee5;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 0.95rem;
+	font-family: 'Pretendard', sans-serif;
+	line-height: 1.5;
+	color: #222;
+	background: #fff;
+	resize: none;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+.cs-body-edit-field:focus {
+	outline: none;
+	border-color: #00a7d8;
+	box-shadow: 0 0 0 2px rgba(0,167,216,0.1);
+}
+
+/* 버튼 영역 */
+.cs-edit-actions {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 8px;
+}
+
+/* 등록 버튼 */
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[title="등록"],
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[data-action="submit"] {
+	background: #00a7d8;
+	border: none;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 0.9rem;
+	padding: 6px 14px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[title="등록"] span,
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[data-action="submit"] span {
+	color: #fff;
+}
+
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[title="등록"]:hover,
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[data-action="submit"]:hover {
+	background: #0090bd;
+	color: #fff;
+}
+
+/* 취소 버튼 */
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[title="취소"],
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[data-action="cancel"] {
+	background: #f3f5f7;
+	border: 1px solid #d0d6dc;
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 0.9rem;
+	padding: 6px 14px;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[title="취소"] span,
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[data-action="cancel"] span {
+	color: #444;
+}
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[title="취소"]:hover,
+.cs-edit-box .cs-edit-actions .oo-ui-buttonElement-button[data-action="cancel"]:hover {
+	background: #e6ebf0;
+	color: #111;
+	border: 1px solid #d0d6dc;
+}
+.cs-progress-wrapper {
+	width: 100%;
+	margin-top: 6px;
+	margin-bottom: 2px;
+	padding: 0;
+}
+
+.cs-progress-wrapper .oo-ui-progressBarWidget {
+	width: 100% !important;
+	display: block !important;
+	box-sizing: border-box;
+	max-width: none !important;
+}
+
+.cs-progress-wrapper .oo-ui-progressBarWidget-bar {
+	background-color: #00a7d8 !important; /* 브랜드 색 */
+	height: 4px !important;
+	border-radius: 2px;
+}
