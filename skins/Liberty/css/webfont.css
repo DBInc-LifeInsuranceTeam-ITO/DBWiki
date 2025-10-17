@@ -1,0 +1,183 @@
+/* 
+@font-face {
+	font-family: 'Hankc';
+	font-style: normal;
+	font-weight: 400;
+	src: local('한겨레결체'),
+	url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Youth';
+	font-style: normal;
+	font-weight: 400;
+	src: local('청소년서체'),
+	url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff') format('woff');
+}
+*/
+
+
+/* 한겨레결체 */
+@font-face {
+    font-family: 'Hankc';
+    font-style: normal;
+    font-weight: 400;
+    src: local('한겨레결체'),
+         url('../resources/fonts/Hankc.woff2') format('woff2');
+}
+
+/* 청소년체 */
+@font-face {
+    font-family: 'Youth';
+    font-style: normal;
+    font-weight: 400;
+    src: local('청소년서체'),
+         url('../resources/fonts/Youth.ttf') format('ttf');
+}
+
+/* Dokdo */
+@font-face {
+    font-family: 'Dokdo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dokdo'),
+         url('../resources/fonts/Dokdo-Regular.ttf') format('ttf'),
+         url('../resources/fonts/Dokdo-Regular.ttf') format('ttf');
+}
+
+/* Gaegu */
+@font-face {
+    font-family: 'Gaegu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gaegu'),
+         url('../resources/fonts/Gaegu-Regular.ttf') format('ttf');
+}
+
+/* Nanum Gothic */
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nanum Gothic'),
+         url('../resources/fonts/NanumGothic-Regular.ttf') format('ttf');
+}
+
+/* Nanum Gothic Coding */
+@font-face {
+    font-family: 'Nanum Gothic Coding';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nanum Gothic Coding'),
+         url('../resources/fonts/NanumGothicCoding-Regular.ttf') format('ttf');
+}
+
+/* Nanum Myeongjo */
+@font-face {
+    font-family: 'Nanum Myeongjo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nanum Myeongjo'),
+         url('../resources/fonts/NanumMyeongjo-Regular.ttf') format('ttf');
+}
+
+/* Noto Serif KR */
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Serif KR'),
+         url('../resources/fonts/NotoSerif.ttf') format('ttf');
+}
+
+/* Noto Sans KR */
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans KR'),
+         url('../resources/fonts/NotoSans.ttf') format('ttf');
+}
+
+/* Noto Sans KR */
+@font-face {
+    font-family: 'Noto Color Emoji';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Color Emoji'),
+         url('../resources/fonts/NotoColorEmoji-Regular.ttf') format('ttf');
+}
+
+/* Pretendard */
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url(../resources/fonts/Pretendard-Black.woff2) format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url(../resources/fonts/Pretendard-ExtraBold.woff2) format('woff2') ;
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../resources/fonts/Pretendard-Bold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url(../resources/fonts/Pretendard-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url(../resources/fonts/Pretendard-Medium.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../resources/fonts/Pretendard-Regular.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url(../resources/fonts/Pretendard-Light.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url(../resources/fonts/Pretendard-ExtraLight.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url(../resources/fonts/Pretendard-Thin.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'D2Coding';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('D2Coding'),
+         url('/resources/fonts/D2Coding.ttf') format('truetype');
+}

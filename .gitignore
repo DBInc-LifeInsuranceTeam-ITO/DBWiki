@@ -1,0 +1,12 @@
+# MediaWiki runtime files
+cache/
+vendor/
+extensions/*
+!extensions/MyCustomExtension/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
